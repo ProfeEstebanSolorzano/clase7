@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gym Membership Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="testbox">
+
+        <form onsubmit="return procesarFormulario()">
+            <div class="banner">
+                <h1>Formulario de Membresía para Gimnasio</h1>
+            </div>
+            <h3 class="top-info">Querés ser parte de nuestro gym? Llená este formulario y pronto nos contactaremos con vos!</h3>
+            <div class="item">
+                <p>Nombre Completo<span class="required">*</span></p>
+                <div class="name-item">
+                    <input type="text" name="name" placeholder="Nombre" required/>
+                    <input type="text" name="name" placeholder="Apellido" required/>
+                </div>
+            </div>
+            <div class="question">
+                <p>Género<span class="required">*</span></p>
+                <div class="question-answer">
+                    <label><input type="radio" value="Masculino" name="gender" required/> <span>Masculino</span></label>
+                    <label><input type="radio" value="Femenino" name="gender" required/> <span>Femenino</span></label>
+                    <label><input type="radio" value="No Binario" name="gender" required/> <span>No Binario</span></label>
+                </div>
+            </div>
+            <div class="item">
+                <p>Peso<span class="required">*</span></p>
+                <input type="text" name="name" required/>
+            </div>
+            <div class="item">
+                <p>Altura<span class="required">*</span></p>
+                <input type="text" name="name" required/>
+            </div>
+            <div class="item">
+                <p>Dirección<span class="required">*</span></p>
+                <input type="text" name="name" placeholder="Dirección exacta" required/>
+                <div class="city-item">
+                    <input type="text" name="name" placeholder="Cantón" required/>
+                    <input type="text" name="name" placeholder="Distrito" required/>
+                    <select>
+              <option value="">Provincia</option>
+              <option value="1">San José</option>
+              <option value="2">Alajuela</option>
+              <option value="3">Cartago</option>
+              <option value="4">Heredia</option>
+              <option value="5">Puntarenas</option>
+              <option value="6">Guanacaste</option>
+              <option value="7">Limon</option>
+            </select>
+                </div>
+            </div>
+            <div class="item">
+                <p>Email<span class="required">*</span></p>
+                <input type="email" name="email" required/>
+            </div>
+            <div class="item">
+                <p>Teléfono</p>
+                <input type="text" name="telefono" />
+            </div>
+            <div class="question">
+                <p>Requiere de un entrenador personal?<span class="required">*</span></p>
+                <div class="question-answer">
+                    <label><input type="radio" value="Sí" name="personal-trainer" required/> <span>Sí</span></label>
+                    <label><input type="radio" value="No" name="personal-trainer" required/> <span>No</span></label>
+                </div>
+            </div>
+            <div class="question">
+                <p>Tiene experiencia en gimnasios?<span class="required">*</span></p>
+                <div class="question-answer">
+                    <label><input type="radio" value="Sí" name="experiencia" required/> <span>Sí</span></label>
+                    <label><input type="radio" value="No" name="experiencia" required/> <span>No</span></label>
+                </div>
+            </div>
+            <div class="question">
+                <p>Tipo de membresía a la que aplica<span class="required">*</span></p>
+                <div class="question-answer">
+                    <label><input type="radio" value="Regular" name="membership" required/> <span>Regular</span></label>
+                    <label><input type="radio" value="Pro" name="membership" required/> <span>Pro</span></label>
+                    <label><input type="radio" value="Vip" name="membership" required/> <span>VIP</span></label>
+                </div>
+            </div>
+            <div class="btn-block">
+                <button>Enviar</button>
+            </div>
+        </form>
+        <div class="invisible">
+
+        </div>
+        <textarea name="" id="display" cols="100" rows="65" class="escondida"></textarea>
+    </div>
+</body>
+
+</html>
