@@ -155,6 +155,7 @@ button:hover {
 
 .error {
     color: red;
+    font-size: 250%;
 }
 
 @media (min-width: 568px) {
