@@ -12,7 +12,7 @@
 <body>
     <div class="testbox">
 
-        <form onsubmit="return procesarFormulario()">
+        <form onsubmit="return procesarFormulario()" novalidate>
             <div class="banner">
                 <h1>Formulario de Membresía para Gimnasio</h1>
             </div>
@@ -20,8 +20,8 @@
             <div class="item">
                 <p>Nombre Completo<span class="required">*</span></p>
                 <div class="name-item">
-                    <input type="text" name="name" placeholder="Nombre" required/>
-                    <input type="text" name="name" placeholder="Apellido" required/>
+                    <input type="text" name="nombre" placeholder="Nombre" required/>
+                    <input type="text" name="apellido" placeholder="Apellido" required/>
                 </div>
             </div>
             <div class="question">
@@ -44,8 +44,8 @@
                 <p>Dirección<span class="required">*</span></p>
                 <input type="text" name="direccion" placeholder="Dirección exacta" required/>
                 <div class="city-item">
-                    <input type="text" name="name" placeholder="Cantón" required/>
-                    <input type="text" name="name" placeholder="Distrito" required/>
+                    <input type="text" name="canton" placeholder="Cantón" required/>
+                    <input type="text" name="distrito" placeholder="Distrito" required/>
                     <select>
                         <option value="">Provincia</option>
                         <option value="1">San José</option>
